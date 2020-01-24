@@ -111,6 +111,13 @@ footer{
 
 /* Listado de libros */
 
+.list-group-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.25em;
+}
+
 .lista-libros{
     color: #fff;
 }
@@ -120,8 +127,24 @@ footer{
 }
 
 .lista-libros-titulo{
-    line-height: 1.1em;
-    font-size: 1.1em;
+    font-size: 1em;
+    line-height: 1.15em;
     margin-bottom: 0px;
     font-weight: 600;
+}
+
+.badge{
+    padding: 0.5em 0.75em;
+    margin-top: 10px;
+}
+
+.lista-libros-botones{
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-libros-botones button:nth-child(1){
+    width: 45px;
+    height: 45px;
+    margin-bottom: 8px;
 }
